@@ -1,0 +1,124 @@
+/* ==================== Pop-up__Fedback ==================== */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  left: 0;
+  z-index: 51;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+  opacity: 1;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+.popup__content {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.popup__box {
+  display: flex;
+  justify-content: space-between;
+}
+.popup__feedback {
+  padding: 40px 40px 32px 40px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.popup__button {
+  background-color: #fafafa;
+}
+.popup__button:hover {
+  background-color: #000593;
+  transition: background 0.3s ease-in-out;
+}
+
+.popup__fedback-img {
+  width: 330px;
+  height: 522px;
+}
+/* ==================== Pop-up__Review ==================== */
+
+.popup__review {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 572px;
+  max-height: 636px;
+}
+.popup__review-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000593;
+  margin-bottom: 5px;
+}
+.popup__review-date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1f1f1f;
+  margin-bottom: 20px;
+}
+.popup__review-text {
+  ont-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1f1f1f;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.popup__text {
+  margin-bottom: 20px;
+}
+/* ==================== Pop-up__Thank ==================== */
+.popup__thank {
+  background-color: #fff;
+  max-width: 653px;
+  max-height: 677px;
+  padding: 26px 40px 50px 40px;
+}
+.popup__thank-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 440px;
+  max-height: 327px;
+  padding-right: 30px;
+}
+.popup__thank-chapter {
+}
+.chapter {
+}
+.popup__thank-title {
+  margin-bottom: 50px;
+}
+.title {
+}
+.popup__thank-link {
+  color: #000593;
+  padding: 18px 35px;
+  border: 1px solid #000593;
+  border-radius: 4px;
+}

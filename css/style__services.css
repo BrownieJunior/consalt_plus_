@@ -1,0 +1,183 @@
+/*============================== Services__Hero =========================*/
+
+.services__hero {
+  background: url("../img/services/services__herobg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.services__hero-content {
+  padding: 57px 0 165px 0;
+}
+.services__hero-address {
+  justify-content: start;
+  align-items: start;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f1f1f;
+  margin-bottom: 93px;
+}
+.index {
+  color: #000;
+}
+.services {
+  color: #000593;
+}
+
+.services__hero-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #000593;
+  margin-bottom: 15px;
+}
+
+.services__hero-text {
+  margin: 0 auto;
+  max-width: 370px;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #1f1f1f;
+}
+/*============================== Services-Rates =========================*/
+.services__rates {
+  padding: 140px 0;
+}
+
+.rates__container {
+}
+.rates__chapter {
+}
+.chapter {
+}
+.services__rates-title {
+  margin-bottom: 70px;
+}
+
+.rates__option-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.rates__item {
+  width: 47%;
+  background: #fafafa;
+  border-radius: 4px;
+  padding: 30px 20px 40px 30px;
+}
+.rates__item:not(:last-child) {
+  margin-right: 60px;
+}
+.rates__item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.rates__item-summ {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  opacity: 0.6;
+  margin-bottom: 19px;
+}
+.rates__description-list {
+  margin-bottom: 50px;
+}
+.rates__description-item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
+.rates__item-choose {
+  color: #000593;
+  padding: 16px 35px;
+  border: 1px solid #000593;
+  border-radius: 4px;
+}
+
+.services__hero-form {
+  display: flex;
+  border-radius: 4px;
+  padding: 30px 48px;
+  justify-content: space-between;
+  background: #fafafa;
+  border-radius: 4px;
+}
+.services__name-input {
+  height: 57px;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px 4px 0px 0px;
+  padding: 22px 0 19px 20px;
+}
+.services__name-input:focus-visible {
+  border-bottom: 1px solid #000593;
+}
+.services__phone-input {
+  height: 57px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px 4px 0px 0px;
+  padding: 22px 0 19px 20px;
+}
+.services__phone-input:focus-visible {
+  border-bottom: 1px solid #000593;
+}
+
+/*============================== Additional__Services =========================*/
+
+.additional__services {
+  padding: 140px 0;
+  background: url("../img/services/services__services.jpg") no-repeat;
+  background-size: cover;
+}
+.container {
+}
+.additional__container {
+}
+.additional-chapter {
+}
+.chapter {
+}
+.additional__title {
+  margin-bottom: 70px;
+}
+.title {
+}
+.additional__option-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 326px 220px 220px 326px 220px;
+  row-gap: 60px;
+  column-gap: 47px;
+}
+.rates__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rates__item-title {
+}
+.rates__item-summ {
+}
+.rates__description-list {
+}
+.rates__description-item {
+}
+.rates__item-choose {
+  align-self: start;
+}
+/*============================== FAQ__Services =========================*/
+.accordion__fifth {
+  max-width: 570px;
+  margin-bottom: 70px;
+}

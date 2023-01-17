@@ -1,0 +1,44 @@
+.thank {
+  padding: 77px 0 140px 0;
+}
+
+.thank__container {
+}
+.thank__hero-address {
+  margin-bottom: 100px;
+}
+.index {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f1f1f;
+}
+.thank {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000593;
+}
+.thank__content {
+  display: flex;
+  justify-content: space-between;
+}
+.thank__left {
+  max-width: 570px;
+}
+.thank__title {
+  margin-bottom: 50px;
+}
+
+.thank__link {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #000593;
+  border: 1px solid #000593;
+  padding: 16px 30px;
+  border-radius: 4px;
+}
+.thank__img {
+  max-width: 570px;
+}

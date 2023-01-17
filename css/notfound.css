@@ -1,0 +1,71 @@
+.notfound {
+  padding: 77px 0 140px 0;
+}
+
+.notfound__container {
+}
+.notfound__hero-address {
+  margin-bottom: 100px;
+}
+.index {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f1f1f;
+}
+.notfound {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000593;
+}
+.notfound__content {
+  display: flex;
+  justify-content: space-between;
+}
+.notfound__left {
+  max-width: 570px;
+}
+.notfound__title {
+  margin-bottom: 30px;
+}
+.notfound__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1f1f1f;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+.notfound__link {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #000593;
+  border: 1px solid #000593;
+  padding: 16px 30px;
+  border-radius: 4px;
+}
+.notfound__img {
+  max-width: 570px;
+}
+.notfound__link:focus-visible {
+  color: #fff;
+  background-color: #000593;
+  border-color: #000593;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.notfound__link:hover {
+  color: #fff;
+  background-color: #000593;
+  border-color: #000593;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.notfound__link:active {
+  color: #fff;
+  background-color: #000be6;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
