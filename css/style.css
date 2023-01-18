@@ -1,11 +1,11 @@
-@import url("./null.css");
-@import url("./media.css");
-@import url("./accordion.css");
-@import url("./style__faq.css");
-@import url("./style__services.css");
-@import url("./notfound.css");
-@import url("./thank.css");
-@import url("./popup.css");
+@import url("../null.css");
+@import url("../media.css");
+@import url("../accordion.css");
+@import url("../style__faq.css");
+@import url("../style__services.css");
+@import url("../notfound.css");
+@import url("../thank.css");
+@import url("../popup.css");
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 body {
@@ -157,7 +157,7 @@ body.lock {
 }
 /*============================== Hero =========================*/
 .hero {
-  background: url("/img/main/main__bg.jpg") no-repeat;
+  background: url("../img/main/main__bg.jpg") no-repeat;
   background-size: cover;
   margin-bottom: 142px;
 }
@@ -757,8 +757,7 @@ body.lock {
   width: 400px;
 }
 /*============================== FAQ =========================*/
-.faq {
-}
+
 .faq__container {
   padding: 140px 0 140px 0;
 }
@@ -832,10 +831,7 @@ body.lock {
   line-height: 130%;
   color: #1f1f1f;
 }
-.ac-svg {
-}
-.ac-panel {
-}
+
 .ac-text {
   padding: 20px 0;
   border-bottom: 1px solid #b3b3b3;
