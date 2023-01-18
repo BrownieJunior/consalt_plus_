@@ -1,11 +1,11 @@
-@import url("../null.css");
-@import url("../media.css");
-@import url("../accordion.css");
-@import url("../style__faq.css");
-@import url("../style__services.css");
-@import url("../notfound.css");
-@import url("../thank.css");
-@import url("../popup.css");
+@import url("./null.css");
+@import url("./media.css");
+@import url("./accordion.css");
+@import url("./style__faq.css");
+@import url("./style__services.css");
+@import url("./notfound.css");
+@import url("./thank.css");
+@import url("./popup.css");
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 body {
@@ -225,13 +225,11 @@ body.lock {
   margin-bottom: 4px;
 }
 
-
-
 .form__phone-input {
   height: 57px;
   width: 100%;
   background: #fafafa;
-	padding: 22px 0 19px 20px;
+  padding: 22px 0 19px 20px;
   border-radius: 4px 4px 0px 0px;
 }
 .form__phone-input:focus-visible {
