@@ -130,10 +130,11 @@
 .feedback__phone-input:focus-visible {
   border-bottom: 1px solid #000593;
 }
+
 .feedback__form-button {
   font-size: 14px;
   width: 100%;
-  padding: 18px 35px 18px 35px;
+  padding: 18px 76px 18px 76px;
   line-height: 150%;
   text-align: center;
   color: #000593;

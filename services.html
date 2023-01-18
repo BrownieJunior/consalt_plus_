@@ -189,7 +189,7 @@
               type="text"
             />
           </div>
-          <a href="#" class="hero__form-button link"
+          <a href="#popup" class="hero__form-button link popup-link"
             >Получить консультацию</a
           >
         </form>
@@ -670,7 +670,7 @@
 										Рекомендую сходить сюда хоть раз, чтобы круто провести
 										время и почувствовать атмосферу
 									</p>
-									<a class="swiper__item-link popup-link" href="#poptp_2"
+									<a class="swiper__item-link popup-link" href="#popup_2"
 										>Открыть полностью</a
 									>
 								</li>
@@ -1056,78 +1056,83 @@
         </div>
       </div>
     </footer>
-    <div id="popup" class="popup">
-      <div class="popup__body">
-        <div class="popup__content">
-          <a href="#header" class="popup__close close-popup">
-            <svg
-              class="popup__cross"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                opacity="0.1"
-                cx="12.5"
-                cy="12.4998"
-                r="12.5"
-                fill="#000593"
-              />
-              <g clip-path="url(#clip0_158_2746)">
-                <path
-                  d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
-                  stroke="#000593"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_158_2746">
-                  <rect
-                    width="11"
-                    height="11"
-                    fill="white"
-                    transform="translate(7 6.99976)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-          <div class="popup__box">
-            <div class="popup__feedback">
-              <h3 class="feedback__title">Не нашли нужный вопрос?</h3>
-              <p class="feedback__text">
-                Оставьте контакты и мы ответим на все ваши вопросы
-              </p>
-              <form class="feedback__hero-form">
-                <div class="feedback__name-form">
-                  <p>Ваше имя*</p>
-                  <input class="feedback__name-input" type="text" />
-                </div>
-                <div class="feedback__phone-form">
-                  <p>Номер телефона</p>
-                  <input
-                    placeholder="8 ХХХ ХХХ ХХ ХХ"
-                    class="feedback__phone-input"
-                    type="text"
-                  />
-                </div>
-                <button id="popup__button" class="feedback__form-button link">
-                  Получить консультацию
-                </button>
-              </form>
-            </div>
-            <img
-              class="popup__fedback-img"
-              src="./img/popup/popup__feedback.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup">
+						<svg
+							class="popup__cross"
+							width="25"
+							height="25"
+							viewBox="0 0 25 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								opacity="0.1"
+								cx="12.5"
+								cy="12.4998"
+								r="12.5"
+								fill="#000593"
+							/>
+							<g clip-path="url(#clip0_158_2746)">
+								<path
+									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
+									stroke="#000593"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_158_2746">
+									<rect
+										width="11"
+										height="11"
+										fill="white"
+										transform="translate(7 6.99976)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div class="popup__box">
+						<div class="popup__feedback">
+							<h3 class="feedback__title">Не нашли нужный вопрос?</h3>
+							<p class="feedback__text">
+								Оставьте контакты и мы ответим на все ваши вопросы
+							</p>
+							<form class="feedback__hero-form">
+								<div class="feedback__name-form">
+									<p>Ваше имя*</p>
+									<input class="feedback__name-input" type="text" />
+								</div>
+								<div class="feedback__phone-form">
+									<p>Номер телефона</p>
+									<input
+										placeholder="8 ХХХ ХХХ ХХ ХХ"
+										class="feedback__phone-input"
+										type="text"
+									/>
+								</div>
+								<button>
+									<a
+										href="#popup_3"
+										class="feedback__form-button link popup__button popup-link"
+									>
+										Получить консультацию
+									</a>
+								</button>
+							</form>
+						</div>
+						<img
+							class="popup__fedback-img"
+							src="./img/popup/popup__feedback.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="popup_2" class="popup">
 			<div class="popup__body">
 				<div class="popup__content">
@@ -1197,6 +1202,65 @@
 									и почувствовать атмосферу
 								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup_3" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup">
+						<svg
+							class="popup__cross"
+							width="25"
+							height="25"
+							viewBox="0 0 25 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								opacity="0.1"
+								cx="12.5"
+								cy="12.4998"
+								r="12.5"
+								fill="#000593"
+							/>
+							<g clip-path="url(#clip0_158_2746)">
+								<path
+									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
+									stroke="#000593"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_158_2746">
+									<rect
+										width="11"
+										height="11"
+										fill="white"
+										transform="translate(7 6.99976)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div class="popup__box">
+						<div class="popup__thank">
+							<img
+								class="popup__thank-img"
+								src="./img/popup/popup__thank.png"
+								alt=""
+							/>
+							<p class="popup__thank-chapter chapter">Спасибо за заявку</p>
+							<p class="popup__thank-title title">
+								Наш менеджер свяжется с вами в течении 1 минуты и
+								проконсультирует по любому вопросу
+							</p>
+							<a class="popup__thank-link link" href="./index.html"
+								>Вернуться на главную</a
+							>
 						</div>
 					</div>
 				</div>
