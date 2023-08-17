@@ -34,9 +34,16 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .popup__close {
+}
+.close-popup {
   position: absolute;
   right: 10px;
   top: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/popup/popup__cross.svg);
+  background-position: center;
+  cursor: pointer;
 }
 .popup__box {
   display: flex;
@@ -82,8 +89,8 @@
   margin-bottom: 20px;
 }
 .popup__review-text {
-  ont-weight: 300;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 140%;
   color: #1f1f1f;
   opacity: 0.8;
@@ -100,17 +107,16 @@
   max-height: 677px;
   padding: 26px 40px 50px 40px;
 }
-.popup__thank-img {
-  display: block;
+
+.popup__thank-imgbox {
   margin: 0 auto;
   max-width: 440px;
-  max-height: 327px;
-  padding-right: 30px;
 }
-.popup__thank-chapter {
+.popup__thank-img {
+  max-width: 100%;
+  height: auto;
 }
-.chapter {
-}
+
 .popup__thank-title {
   margin-bottom: 50px;
 }
@@ -121,4 +127,6 @@
   padding: 18px 35px;
   border: 1px solid #000593;
   border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
 }

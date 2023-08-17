@@ -46,8 +46,15 @@
   padding: 16px 30px;
   border-radius: 4px;
 }
-.notfound__img {
+
+.notfound__img-box {
+  display: flex;
+  align-items: center;
   max-width: 570px;
+}
+.notfound__img {
+  max-width: 100%;
+  height: auto;
 }
 .notfound__link:focus-visible {
   color: #fff;

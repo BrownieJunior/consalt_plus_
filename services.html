@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./js/script.js" />
     <link
       rel="stylesheet"
@@ -14,11 +15,10 @@
 
     <title>Consalt Plus</title>
   </head>
-	<div>
+
   <body>
-		<div class="wrapper">
-    <header class="container header__container">
-      <div class="header__left">
+    <div class="wrapper">
+      <header class="container header__container">
         <a class="header__logo" href="./index.html"
           ><img
             class="header__logo-img"
@@ -28,10 +28,10 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__item-link" href="./notfound.html">О нас</a>
+              <a class="header__item-link" href="./index.html#about__us">О нас</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__item-link" href="./notfound.html">Тарифы</a>
+              <a class="header__item-link" href="./index.html#rates">Тарифы</a>
             </li>
             <li class="header__nav-item">
               <a class="header__item-link" href="./services.html"
@@ -43,8 +43,6 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <div class="header__rigth">
         <div class="header__social">
           <a class="header__social-link" href="#"
             ><svg
@@ -118,875 +116,41 @@
           <a href="tel:8800200600">8 800 200 600</a>
           <p class="header__phone-description">Звонок по России бесплатный</p>
         </div>
-        <a class="header__aplication link popup-link" href="#popup"
-          >Оставить заявку</a
-        >
-      </div>
-    </header>
-    <main>
-      <section class="services__hero">
-        <div class="container services__hero-container">
-          <div class="services__hero-content">
-            <div class="services__hero-address">
-              <a class="index" href="./index.html">Главная</a>
-              <span>/</span>
-              <a class="services" href="./services.html">Дополнительные услуги</a>
-            </div>
-            <h2 class="services__hero-title">Услуги компании</h2>
-            <p class="services__hero-text">
-              Фиксированные цены и ответ на запрос в течение 45 минут
-            </p>
-          </div>
+        <div class="header__aplication hero__btn-link link" data-popup="popup1">
+          Оставить заявку
         </div>
-      </section>
-    </main>
-    <section class="services__rates">
-      <div class="container rates__container">
-        <div class="rates__chapter chapter">Тарифы</div>
-        <div class="services__rates-title title">
-          Выберите тариф для вашего бизнеса
-        </div>
-        <ul class="rates__option-list">
-          <li class="rates__item">
-            <p class="rates__item-title">Тариф «Нулевой УСН»</p>
-            <p class="rates__item-summ">2000 руб/квартал</p>
-            <ul class="rates__description-list">
-              <li class="rates__description-item">– УСН</li>
-              <li class="rates__description-item">
-                – Составление ежемесячной отчетности в ПФР
-              </li>
-              <li class="rates__description-item">
-                – Составление квартальной отчетности
-              </li>
-            </ul>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <p class="rates__item-title">Тариф «Нулевой УСН»</p>
-            <p class="rates__item-summ">2000 руб/квартал</p>
-            <ul class="rates__description-list">
-              <li class="rates__description-item">– УСН</li>
-              <li class="rates__description-item">
-                – Составление ежемесячной отчетности в ПФР
-              </li>
-              <li class="rates__description-item">
-                – Составление квартальной отчетности
-              </li>
-            </ul>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-        </ul>
-        <form class="services__hero-form">
-          <div class="name__form">
-            <p>Ваше имя*</p>
-            <input class="services__name-input" type="text" />
-          </div>
-          <div class="phone__form">
-            <p>Номер телефона</p>
-            <input
-              placeholder="8 ХХХ ХХХ ХХ ХХ"
-              class="services__phone-input"
-              type="text"
-            />
-          </div>
-          <a href="#popup" class="hero__form-button link popup-link"
-            >Получить консультацию</a
-          >
-        </form>
-      </div>
-    </section>
-    <section class="additional__services">
-      <div class="container additional__container">
-        <p class="additional-chapter chapter">Услуги</p>
-        <p class="additional__title title">Дополнительные услуги</p>
-        <ul class="additional__option-list">
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Регистрация ООО с одним учредителем
-              </p>
-              <p class="rates__item-summ">5000 рублей</p>
-              <ul class="rates__description-list">
-                <li class="rates__description-item">
-                  - Подготовка комплекта документов - Подбор ОКВЭД
-                </li>
-                <li class="rates__description-item">
-                  - Консультация по налогообложению
-                </li>
-                <li class="rates__description-item">– Подбор ОКВЭД</li>
-              </ul>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Регистрация ООО с несколькими учредителями
-              </p>
-              <p class="rates__item-summ">от 7000 рублей</p>
-              <ul class="rates__description-list">
-                <li class="rates__description-item">
-                  – Подготовка комплекта документов
-                </li>
-                <li class="rates__description-item">– Подбор ОКВЭД</li>
-                <li class="rates__description-item">
-                  – Консультация по налогообложению
-                </li>
-              </ul>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Внесение изменений в ЕГРЮЛ по ОКВЭД (для ООО)
-              </p>
-              <p class="rates__item-summ">3500 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">Смена директора ООО</p>
-              <p class="rates__item-summ">4000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">Изменение состава участников ООО</p>
-              <p class="rates__item-summ">от 7000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Внесение изменений в ЕГРИП по ОКВЭД (для ИП)
-              </p>
-              <p class="rates__item-summ">2000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">Регистрация ИП</p>
-              <p class="rates__item-summ">2500 рублей</p>
-              <ul class="rates__description-list">
-                <li class="rates__description-item">
-                  - Подготовка комплекта документов
-                </li>
-                <li class="rates__description-item">- Подбор ОКВЭД</li>
-                <li class="rates__description-item">
-                  – Консультация по налогообложению
-                </li>
-              </ul>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">Закрытие ИП</p>
-              <p class="rates__item-summ">3000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Изменение юридического адреса в связи с переездом в другой
-                регион
-              </p>
-              <p class="rates__item-summ">от 8000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-          <li class="rates__item">
-            <div>
-              <p class="rates__item-title">
-                Изменение юридического адреса в пределах того же региона (без
-                внесения изменений в устав)
-              </p>
-              <p class="rates__item-summ">4000 рублей</p>
-            </div>
-            <a class="rates__item-choose link" href="#">Выбрать</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="work">
-      <div class="container work__container">
-        <div class="work__chapter chapter">Как мы работаем</div>
-        <h2 class="work__title title">Уже 7 лет мы работаем удаленно</h2>
-        <p class="work__text1">
-          Уже 7 лет работаем удалённо... Процесс работы приятный и т.д.
-        </p>
-        <p class="work__text2">
-          Вы передаете нам ваши первичные документы (через ЭДО или сканы), мы их
-          обрабатываем и начинаем ведение бухгалтерского и налогового учета за
-          вас.
-        </p>
-        <img
-          src="./img/main/how__work/work__bg1.png"
-          alt=""
-          class="work__bg-img1"
-        />
-        <ul class="work__list">
-          <li class="work__item item1">
-            <div class="work__item-content">
-              <svg
-                class="work__item-svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.5 12.0005H15.5"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 15.5005V8.50049"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="work__item-text">
-                Оставьте заявку на нашем сайте.
-                <span
-                  >Мы ответим вам в течение 15-ти минут и подберем для вас
-                  подходящий тариф.</span
-                >
-              </p>
-              <a class="work__item-link link popup-link" href="#popup">Получить консультацию</a>
-            </div>
-          </li>
-          <li class="work__item item2">
-            <div class="work__item-content">
-              <svg
-                class="work__item-svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.5 12.0005H15.5"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 15.5005V8.50049"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="work__item-text">
-                Вы передаете нам ваши первичные документы (через ЭДО или сканы),
-                мы их обрабатываем и начинаем ведение бухгалтерского и
-                налогового учета за вас.
-              </p>
-            </div>
-          </li>
-          <li class="work__item item3">
-            <div class="work__item-content">
-              <svg
-                class="work__item-svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.5 12.0005H15.5"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 15.5005V8.50049"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="work__item-text">
-                Мы предоставляем отчетность в ИФНС, ФСС, ПФР и Росстат,
-                начисляем зарплату вашим сотрудникам, налоги и взносы в бюджет,
-                консультируем по важным для вас вопросам простым языком.
-              </p>
-            </div>
-          </li>
-          <li class="work__item item4">
-            <div class="work__item-content">
-              <svg
-                class="work__item-svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.5 12.0005H15.5"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 15.5005V8.50049"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="work__item-text">
-                Составим договор и подпишем его удаленно с помощью ЭЦП
-              </p>
-            </div>
-          </li>
-          <li class="work__item item5">
-            <div class="work__item-content">
-              <svg
-                class="work__item-svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.5 12.0005H15.5"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 15.5005V8.50049"
-                  stroke="#000593"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="work__item-text">
-                Вы занимаетесь развитием вашего бизнеса, мы – качественным
-                ведением вашей бухгалтерии.
-              </p>
-            </div>
-          </li>
-        </ul>
-        <img
-          src="./img/main/how__work/work__bg2.png"
-          alt=""
-          class="work__bg-img2"
-        />
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container reviews__container">
-        <div class="reviews__chapter chapter">Отзывы</div>
-        <div class="reviews__top">
-          <h2 class="reviews__title title">Мы гордимся каждым партнёрством</h2>
-          <!-- If we need navigation buttons -->
-          <div id="swiper-button-prev" class="swiper-button-prev">
-            <svg
-              class="prev__svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="20" cy="20" r="19.5" stroke="#000593" />
-              <path
-                class="prev__svg-path"
-                d="M11.6464 19.6464C11.4512 19.8417 11.4512 20.1583 11.6464 20.3536L14.8284 23.5355C15.0237 23.7308 15.3403 23.7308 15.5355 23.5355C15.7308 23.3403 15.7308 23.0237 15.5355 22.8284L12.7071 20L15.5355 17.1716C15.7308 16.9763 15.7308 16.6597 15.5355 16.4645C15.3403 16.2692 15.0237 16.2692 14.8284 16.4645L11.6464 19.6464ZM27 19.5L12 19.5L12 20.5L27 20.5L27 19.5Z"
-                fill="#000593"
-              />
-            </svg>
-          </div>
-          <div id="swiper-button-next" class="swiper-button-next">
-            <svg
-              class="next__svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="20" cy="20" r="19.5" stroke="#000593" />
-              <path
-                class="next__svg-path"
-                d="M11.6464 19.6464C11.4512 19.8417 11.4512 20.1583 11.6464 20.3536L14.8284 23.5355C15.0237 23.7308 15.3403 23.7308 15.5355 23.5355C15.7308 23.3403 15.7308 23.0237 15.5355 22.8284L12.7071 20L15.5355 17.1716C15.7308 16.9763 15.7308 16.6597 15.5355 16.4645C15.3403 16.2692 15.0237 16.2692 14.8284 16.4645L11.6464 19.6464ZM27 19.5L12 19.5L12 20.5L27 20.5L27 19.5Z"
-                fill="#000593"
-              />
-            </svg>
-          </div>
-        </div>
-				<div class="swiper">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide">
-							<ul class="swiper__slide-list">
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="swiper__slide-list">
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="swiper__slide-list">
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-								<li class="swiper__slide-item">
-									<p class="swiper__item-name">Игорь Рыбаков</p>
-									<p class="swiper__item-date">Отзыв оставлен 11.02.2022</p>
-									<p class="swiper__item-text">
-										Очень высокое качество фильмов, виден каждый волос на лице
-										героев. Ты как будто сам в фильме - эффект присутствия.
-										Рекомендую сходить сюда хоть раз, чтобы круто провести
-										время и почувствовать атмосферу
-									</p>
-									<a class="swiper__item-link popup-link" href="#popup_2"
-										>Открыть полностью</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-        <div id="swiper-scrollbar" class="swiper-scrollbar">
-          <div
-            id="swiper-scrollbar-drag"
-            class="swiper-scrollbar-drag"
-            style="
-              transform: translate3d(0px, 0px, 0px);
-              transition-duration: 0ms;
-              width: 400px;
-            "
-          ></div>
-        </div>
-      </div>
-    </section>
-    <section class="faq">
-      <div class="container faq__container">
-        <div class="faq__chapter chapter">FAQ</div>
-        <h2 class="faq__title title">Вопросы и ответы на них</h2>
-        <div class="faq__content">
-          <div class="faq__left">
-            <div class="accordion__fifth">
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Сколько стоят бухгалтерские услуги и что входит в цену?
-                  </button>
-                  <svg
-                    class="ac-svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+        <!-- burger -->
+        <div class="burger__btn"></div>
+        <div class="menu__burger-container">
+          <div class="menu__burger-content">
+            <div class="close__menu"></div>
+
+            <nav class="burger__nav">
+              <ul class="burger__nav-list">
+                <li class="burger__nav-item">
+                  <a class="burger__item-link" href="./index.html#about__us"
+                    >О нас</a
                   >
-                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                      fill="#666666"
-                    />
-                  </svg>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Мы предлагаем пакетные тарифы на бухгалтерское
-                    сопровождение. Услуги, оказываемые в рамках тарифа, будут
-                    зафиксированы в договоре на бухгалтерское сопровождение.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Нужно ли мне оплачивать что-то дополнительно?
-                  </button>
-                  <svg
-                    class="ac-svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                      fill="#666666"
-                    />
-                  </svg>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Мы предлагаем пакетные тарифы на бухгалтерское
-                    сопровождение. Услуги, оказываемые в рамках тарифа, будут
-                    зафиксированы в договоре на бухгалтерское сопровождение.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Нужен ли Вам доступ к моему банковскому счету?
-                  </button>
-                  <svg
-                    class="ac-svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                      fill="#666666"
-                    />
-                  </svg>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Мы предлагаем пакетные тарифы на бухгалтерское
-                    сопровождение. Услуги, оказываемые в рамках тарифа, будут
-                    зафиксированы в договоре на бухгалтерское сопровождение.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <a class="faq__link link" href="#">Перейти в раздел</a>
-          </div>
-          <img
-            class="faq__rigth-img"
-            src="./img/main/faq/faq__bgpic.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__top">
-          <div class="footer__top-content">
-            <nav class="footer__nav">
-              <h3 class="footer__nav-title footer__title">Навигация</h3>
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">О компании</a>
                 </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Как мы работаем</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Отзывы клиенов</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#"
-                    >Часто задаваемые вопросы</a
+                <li class="burger__nav-item">
+                  <a class="burger__item-link" href="./index.html#rates"
+                    >Тарифы</a
                   >
+                </li>
+                <li class="burger__nav-item">
+                  <a class="burger__item-link" href="./services.html"
+                    >Дополнительные услуги</a
+                  >
+                </li>
+                <li class="burger__nav-item">
+                  <a class="burger__item-link" href="./faq.html">FAQ</a>
                 </li>
               </ul>
             </nav>
-            <nav class="footer__rates">
-              <h3 class="footer__rates-title footer__title">Тарифы</h3>
-              <ul class="footer__rates-list">
-                <li class="footer__rates-item">
-                  <a class="footer__rates-link" href="#">Название тарифа 1</a>
-                </li>
-                <li class="footer__rates-item">
-                  <a class="footer__rates-link" href="#">Название тарифа 2</a>
-                </li>
-                <li class="footer__rates-item">
-                  <a class="footer__rates-link" href="#">Название тарифа 3</a>
-                </li>
-                <li class="footer__rates-item">
-                  <a class="footer__rates-link" href="#">Название тарифа 4</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="footer__services">
-              <h3 class="footer__services-title footer__title">Услуги</h3>
-              <ul class="footer__services-list">
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 1</a
-                  >
-                </li>
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 2</a
-                  >
-                </li>
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 3</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <nav class="footer__faq">
-              <h3 class="footer__faq-title footer__title">FAQ</h3>
-              <ul class="footer__services-list">
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 1</a
-                  >
-                </li>
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 2</a
-                  >
-                </li>
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 3</a
-                  >
-                </li>
-                <li class="footer__services-item">
-                  <a class="footer__services-link" href="#"
-                    >Название услуги 4</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <div class="footer__contact">
-              <a class="footer__contact-link" href="#">Перейти в раздел</a>
-              <a class="footer__contact-phone" href="tel:8800200600"
-                >8 800 200 600</a
-              >
-              <p class="footer__contact-description">
-                Звонок по России бесплатный
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="footer__bottom-rights">
-            <p>Политика конфиденциальности</p>
-            <p>Сайт создан и разработан в CrazyStudio</p>
-          </div>
-          <div class="footer__bottom-socials">
-            <div class="footer__social">
-              <a class="footer__social-link" href="#"
+            <div class="burger__social">
+              <a class="burger__social-link" href="#"
                 ><svg
-                  class="footer__social-svg"
+                  class="burger__social-svg"
                   width="10"
                   height="9"
                   viewBox="0 0 10 9"
@@ -994,15 +158,15 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="footer__social-svg"
+                    class="burger__social-svg"
                     d="M8.99771 0.470007L0.346602 3.90546C0.0655197 3.99916 0.0967512 4.40517 0.377834 4.49886L2.56403 5.18595L3.43851 7.93432C3.50098 8.15294 3.78206 8.2154 3.93822 8.05924L5.2187 6.87245L7.65475 8.65264C7.84214 8.77756 8.092 8.68387 8.15446 8.46525L9.84095 1.21956C9.93465 0.688627 9.46618 0.282619 8.99771 0.470007V0.470007ZM3.93822 5.71688L3.65713 7.34092L3.0325 5.09226L9.12263 1.09464L3.93822 5.71688Z"
-                    fill="#fff"
+                    fill="#000593"
                   />
                 </svg>
               </a>
-              <a class="footer__social-link" href="#"
+              <a class="burger__social-link" href="#"
                 ><svg
-                  class="footer__social-svg"
+                  class="burger__social-svg"
                   width="11"
                   height="11"
                   viewBox="0 0 11 11"
@@ -1011,14 +175,14 @@
                 >
                   <g clip-path="url(#clip0_706_524)">
                     <path
-                      class="footer__social-svg"
+                      class="burger__social-svg"
                       d="M8.74753 4.91786C8.75794 3.6634 7.68957 2.51348 6.36614 2.35428C6.33754 2.35072 6.30905 2.34638 6.28068 2.34127C6.21416 2.32853 6.1467 2.32128 6.07898 2.31958C5.80744 2.31958 5.735 2.51044 5.71592 2.62365C5.69726 2.73426 5.71505 2.82752 5.7684 2.89996C5.85819 3.02185 6.01652 3.04354 6.14361 3.06089C6.18048 3.0661 6.21562 3.07087 6.24511 3.07738C7.43451 3.34328 7.83488 3.761 8.03051 4.94042C8.03528 4.96905 8.03745 5.00461 8.04005 5.04235C8.04873 5.18333 8.06608 5.47656 8.38143 5.47656C8.40746 5.47656 8.43608 5.47439 8.46558 5.47005C8.75881 5.42537 8.7497 5.1573 8.74536 5.02847C8.74406 4.99204 8.74276 4.95777 8.74623 4.93478C8.74692 4.92902 8.74721 4.92322 8.7471 4.91743L8.74753 4.91786Z"
                       fill="#000593"
                     />
                     <path
-                      class="footer__social-svg"
+                      class="header__social-svg"
                       d="M6.00173 1.89397C6.0373 1.89658 6.07027 1.89918 6.09803 1.90308C8.05129 2.20368 8.94963 3.12892 9.19818 5.09736C9.20252 5.13076 9.20338 5.17154 9.20382 5.21448C9.20642 5.36847 9.21163 5.68859 9.55517 5.6951H9.56558C9.67359 5.6951 9.75904 5.66256 9.82064 5.59837C9.92735 5.48689 9.92041 5.32075 9.9139 5.18715C9.9126 5.15419 9.9113 5.12339 9.9113 5.09606C9.93645 3.08337 8.19357 1.25763 6.18261 1.18997C6.17394 1.18997 6.16613 1.18997 6.15832 1.19127C6.15041 1.19226 6.14244 1.1927 6.13446 1.19257C6.11408 1.19257 6.08979 1.19083 6.06333 1.1891C6.03209 1.18693 5.99609 1.18433 5.95922 1.18433C5.6391 1.18433 5.57837 1.41206 5.57056 1.54783C5.55278 1.86144 5.85598 1.88356 6.00173 1.89397ZM9.10405 7.64142C9.06214 7.60956 9.02064 7.57717 8.97956 7.54426C8.76614 7.37248 8.53928 7.21459 8.32023 7.06147L8.18359 6.96604C7.90251 6.76868 7.65005 6.67281 7.41148 6.67281C7.08962 6.67281 6.80941 6.85066 6.57778 7.20071C6.47541 7.356 6.35091 7.43148 6.19779 7.43148C6.09144 7.42776 5.98708 7.4016 5.89155 7.3547C4.98497 6.94349 4.33692 6.31279 3.96648 5.48038C3.78734 5.07784 3.84546 4.81498 4.16038 4.6007C4.33952 4.47924 4.67223 4.25325 4.64924 3.81991C4.62234 3.32845 3.53748 1.84886 3.08029 1.68099C2.88484 1.6097 2.6706 1.60908 2.47475 1.67926C1.94945 1.8558 1.57294 2.16638 1.38425 2.57629C1.20207 2.97276 1.21074 3.43819 1.40767 3.92228C1.97808 5.32206 2.77969 6.54268 3.79081 7.5499C4.78023 8.53586 5.99652 9.3431 7.40541 9.94994C7.5325 10.0046 7.66567 10.0345 7.76327 10.0562C7.79624 10.0636 7.82486 10.0701 7.84569 10.0757C7.85714 10.0788 7.86895 10.0804 7.88082 10.0805H7.8921C8.5549 10.0805 9.35087 9.47497 9.59508 8.78484C9.80936 8.18016 9.4181 7.8813 9.10405 7.64142ZM6.29496 3.49328C6.18174 3.49588 5.94534 3.50196 5.86249 3.74227C5.82345 3.85505 5.82822 3.95221 5.87637 4.03246C5.94664 4.14958 6.08154 4.18601 6.20387 4.20597C6.64848 4.2771 6.87708 4.52262 6.92262 4.97938C6.94388 5.19192 7.08746 5.34071 7.27094 5.34071C7.28486 5.34069 7.29877 5.33982 7.31258 5.3381C7.5338 5.31208 7.64095 5.14942 7.6314 4.85489C7.63487 4.54778 7.47438 4.19903 7.20067 3.92141C6.92653 3.64293 6.59599 3.48591 6.29496 3.49328Z"
-                      fill="#fff"
+                      fill="#000593"
                     />
                   </g>
                   <defs>
@@ -1033,9 +197,9 @@
                   </defs>
                 </svg>
               </a>
-              <a class="footer__social-link" href="#"
+              <a class="burger__social-link" href="#"
                 ><svg
-                  class="footer__social-svg"
+                  class="burger__social-svg"
                   width="11"
                   height="11"
                   viewBox="0 0 9 9"
@@ -1043,236 +207,904 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="footer__social-svg"
+                    class="burger__social-svg"
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M7.46567 1.78516C7.08141 1.40027 6.62425 1.0951 6.12068 0.887321C5.6171 0.679544 5.07712 0.573293 4.532 0.574721C2.2469 0.574721 0.385165 2.42631 0.385165 4.70108C0.383434 5.4254 0.574274 6.13728 0.938308 6.76443L0.350464 8.90308L2.54916 8.32826C3.15712 8.65795 3.83829 8.83098 4.53062 8.83158H4.53235C6.8178 8.83158 8.67745 6.98033 8.67884 4.70384C8.67884 3.60152 8.24785 2.56518 7.46567 1.78482V1.78516ZM4.532 8.13412H4.53062C3.91347 8.13412 3.30765 7.96912 2.77645 7.65637L2.65048 7.5821L1.34501 7.92236L1.69341 6.6563L1.61221 6.52676C1.26679 5.97997 1.08392 5.347 1.08475 4.70108C1.08475 2.81079 2.6314 1.27252 4.53339 1.27252C4.98604 1.2714 5.43443 1.35966 5.85258 1.53222C6.27073 1.70477 6.65034 1.95818 6.96944 2.27777C7.29011 2.59583 7.5443 2.97399 7.71733 3.3904C7.89036 3.80681 7.97879 4.25322 7.97752 4.70384C7.97752 6.59585 6.43087 8.13412 4.53166 8.13412H4.532ZM6.4215 5.56469C6.31844 5.51357 5.80867 5.26415 5.71394 5.2303C5.6192 5.19506 5.5498 5.17883 5.48074 5.28143C5.41134 5.38506 5.21354 5.61755 5.15281 5.68629C5.09313 5.75365 5.03205 5.76332 4.92899 5.71185C4.82488 5.66073 4.4914 5.55122 4.09546 5.19921C3.78765 4.92631 3.5791 4.58777 3.51941 4.48517C3.45834 4.38154 3.51247 4.32627 3.56418 4.27445C3.61137 4.22885 3.66828 4.15458 3.71999 4.09378C3.77135 4.03471 3.78939 3.99153 3.82409 3.92244C3.8581 3.8537 3.84075 3.7929 3.81472 3.74177C3.78904 3.69065 3.58187 3.1818 3.49512 2.97523C3.4108 2.77418 3.32543 2.8025 3.26193 2.7987C3.20224 2.79594 3.13318 2.79594 3.06413 2.79594C2.99472 2.79594 2.88229 2.8215 2.78721 2.92548C2.69247 3.02808 2.42527 3.27784 2.42527 3.78495C2.42527 4.29241 2.79658 4.78329 2.84863 4.85238C2.89999 4.91974 3.5791 5.96126 4.61841 6.40827C4.81099 6.49118 5.00792 6.56372 5.20834 6.62556C5.45645 6.70363 5.68271 6.69292 5.86177 6.66701C6.06096 6.63765 6.47425 6.4176 6.561 6.17613C6.64672 5.93605 6.64672 5.72947 6.62069 5.68629C6.59501 5.64311 6.52596 5.6172 6.4215 5.56469Z"
-                    fill="#fff"
+                    fill="#000593"
                   />
                 </svg>
               </a>
             </div>
+            <div class="burger__phone">
+              <a href="tel:8800200600">8 800 200 600</a>
+              <p class="burger__phone-description">
+                Звонок по России бесплатный
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="burger__style-img"
+            src="./img/main/faq/faq__bgpic.png"
+            alt=""
+          />
+        </div>
+        <!-- burger -->
+      </header>
+      <main>
+        <section class="services__hero">
+          <div class="container services__hero-container">
+            <div class="services__hero-content">
+              <div class="services__hero-address">
+                <a class="index" href="./index.html">Главная</a>
+                <span>/</span>
+                <a class="services" href="./services.html"
+                  >Дополнительные услуги</a
+                >
+              </div>
+              <h2 class="services__hero-title">Услуги компании</h2>
+              <p class="services__hero-text">
+                Фиксированные цены и ответ на запрос в течение 45 минут
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="services__rates">
+        <div class="container rates__container">
+          <div class="rates__chapter chapter">Тарифы</div>
+          <div class="services__rates-title title">
+            Выберите тариф для вашего бизнеса
+          </div>
+          <ul class="rates__option-list">
+            <li class="rates__item">
+              <p class="rates__item-title">Тариф «Нулевой УСН»</p>
+              <p class="rates__item-summ">2000 руб/квартал</p>
+              <ul class="rates__description-list">
+                <li class="rates__description-item">– УСН</li>
+                <li class="rates__description-item">
+                  – Составление ежемесячной отчетности в ПФР
+                </li>
+                <li class="rates__description-item">
+                  – Составление квартальной отчетности
+                </li>
+              </ul>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <p class="rates__item-title">Тариф «Нулевой УСН»</p>
+              <p class="rates__item-summ">2000 руб/квартал</p>
+              <ul class="rates__description-list">
+                <li class="rates__description-item">– УСН</li>
+                <li class="rates__description-item">
+                  – Составление ежемесячной отчетности в ПФР
+                </li>
+                <li class="rates__description-item">
+                  – Составление квартальной отчетности
+                </li>
+              </ul>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+          </ul>
+          <form id="form_id" class="hero__form hero__form-services">
+            <div class="name__form">
+              <p>Ваше имя*</p>
+              <input
+                class="feedback__name-input"
+                type="username"
+                data-name="name"
+                required
+                pattern="[A-Za-zА-Яа-яЁё]+"
+              />
+            </div>
+            <div class="phone__form">
+              <p>Номер телефона</p>
+              <input
+                placeholder="8 ХХХ ХХХ ХХ ХХ"
+                class="feedback__phone-input"
+                type="tel"
+                data-name="phone1"
+                required
+                pattern="[0-9\s]+"
+              />
+            </div>
+            <button type="submit" class="hero__form-button link">
+              Получить консультацию
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="additional__services">
+        <div class="container additional__container">
+          <p class="additional-chapter chapter">Услуги</p>
+          <p class="additional__title title">Дополнительные услуги</p>
+          <ul class="additional__option-list">
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Регистрация ООО с одним учредителем
+                </p>
+                <p class="rates__item-summ">5000 рублей</p>
+                <ul class="rates__description-list">
+                  <li class="rates__description-item">
+                    - Подготовка комплекта документов - Подбор ОКВЭД
+                  </li>
+                  <li class="rates__description-item">
+                    - Консультация по налогообложению
+                  </li>
+                  <li class="rates__description-item">– Подбор ОКВЭД</li>
+                </ul>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Регистрация ООО с несколькими учредителями
+                </p>
+                <p class="rates__item-summ">от 7000 рублей</p>
+                <ul class="rates__description-list">
+                  <li class="rates__description-item">
+                    – Подготовка комплекта документов
+                  </li>
+                  <li class="rates__description-item">– Подбор ОКВЭД</li>
+                  <li class="rates__description-item">
+                    – Консультация по налогообложению
+                  </li>
+                </ul>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Внесение изменений в ЕГРЮЛ по ОКВЭД (для ООО)
+                </p>
+                <p class="rates__item-summ">3500 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">Смена директора ООО</p>
+                <p class="rates__item-summ">4000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Изменение состава участников ООО
+                </p>
+                <p class="rates__item-summ">от 7000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Внесение изменений в ЕГРИП по ОКВЭД (для ИП)
+                </p>
+                <p class="rates__item-summ">2000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">Регистрация ИП</p>
+                <p class="rates__item-summ">2500 рублей</p>
+                <ul class="rates__description-list">
+                  <li class="rates__description-item">
+                    - Подготовка комплекта документов
+                  </li>
+                  <li class="rates__description-item">- Подбор ОКВЭД</li>
+                  <li class="rates__description-item">
+                    – Консультация по налогообложению
+                  </li>
+                </ul>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">Закрытие ИП</p>
+                <p class="rates__item-summ">3000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Изменение юридического адреса в связи с переездом в другой
+                  регион
+                </p>
+                <p class="rates__item-summ">от 8000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+            <li class="rates__item">
+              <div>
+                <p class="rates__item-title">
+                  Изменение юридического адреса в пределах того же региона (без
+                  внесения изменений в устав)
+                </p>
+                <p class="rates__item-summ">4000 рублей</p>
+              </div>
+              <a class="rates__item-choose link" href="#">Выбрать</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container work__container">
+          <div class="work__chapter chapter">Как мы работаем</div>
+          <h2 class="work__title title">Уже 7 лет мы работаем удаленно</h2>
+          <p class="work__text1">
+            Уже 7 лет работаем удалённо... Процесс работы приятный и т.д.
+          </p>
+          <p class="work__text2">
+            Вы передаете нам ваши первичные документы (через ЭДО или сканы), мы
+            их обрабатываем и начинаем ведение бухгалтерского и налогового учета
+            за вас.
+          </p>
+          <img
+            src="./img/main/how__work/work__bg1.png"
+            alt=""
+            class="work__bg-img1"
+          />
+          <ul class="work__list">
+            <li class="work__item item1">
+              <div class="work__item-content">
+                <svg
+                  class="work__item-svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 12.0005H15.5"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15.5005V8.50049"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="work__item-text">
+                  Оставьте заявку на нашем сайте.
+                  <span
+                    >Мы ответим вам в течение 15-ти минут и подберем для вас
+                    подходящий тариф.</span
+                  >
+                </p>
+                <div
+                  class="work__item-link hero__btn-link link"
+                  data-popup="popup1"
+                >
+                  Получить консультацию
+                </div>
+              </div>
+            </li>
+            <li class="work__item item2">
+              <div class="work__item-content">
+                <svg
+                  class="work__item-svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 12.0005H15.5"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15.5005V8.50049"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="work__item-text">
+                  Вы передаете нам ваши первичные документы (через ЭДО или
+                  сканы), мы их обрабатываем и начинаем ведение бухгалтерского и
+                  налогового учета за вас.
+                </p>
+              </div>
+            </li>
+            <li class="work__item item3">
+              <div class="work__item-content">
+                <svg
+                  class="work__item-svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 12.0005H15.5"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15.5005V8.50049"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="work__item-text">
+                  Мы предоставляем отчетность в ИФНС, ФСС, ПФР и Росстат,
+                  начисляем зарплату вашим сотрудникам, налоги и взносы в
+                  бюджет, консультируем по важным для вас вопросам простым
+                  языком.
+                </p>
+              </div>
+            </li>
+            <li class="work__item item4">
+              <div class="work__item-content">
+                <svg
+                  class="work__item-svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 12.0005H15.5"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15.5005V8.50049"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="work__item-text">
+                  Составим договор и подпишем его удаленно с помощью ЭЦП
+                </p>
+              </div>
+            </li>
+            <li class="work__item item5">
+              <div class="work__item-content">
+                <svg
+                  class="work__item-svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.00049H8C4 2.00049 2 4.00049 2 8.00049V21.0005C2 21.5505 2.45 22.0005 3 22.0005H16C20 22.0005 22 20.0005 22 16.0005V8.00049C22 4.00049 20 2.00049 16 2.00049Z"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 12.0005H15.5"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15.5005V8.50049"
+                    stroke="#000593"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="work__item-text">
+                  Вы занимаетесь развитием вашего бизнеса, мы – качественным
+                  ведением вашей бухгалтерии.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <img
+            src="./img/main/how__work/work__bg2.png"
+            alt=""
+            class="work__bg-img2"
+          />
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container reviews__container">
+          <div class="reviews__chapter chapter">Отзывы</div>
+          <div class="reviews__top">
+            <h2 class="reviews__title title">
+              Мы гордимся каждым партнёрством
+            </h2>
+            <!-- If we need navigation buttons -->
+            <div id="swiper-button-prev" class="swiper-button-prev">
+              <svg
+                class="prev__svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="19.5" stroke="#000593" />
+                <path
+                  class="prev__svg-path"
+                  d="M11.6464 19.6464C11.4512 19.8417 11.4512 20.1583 11.6464 20.3536L14.8284 23.5355C15.0237 23.7308 15.3403 23.7308 15.5355 23.5355C15.7308 23.3403 15.7308 23.0237 15.5355 22.8284L12.7071 20L15.5355 17.1716C15.7308 16.9763 15.7308 16.6597 15.5355 16.4645C15.3403 16.2692 15.0237 16.2692 14.8284 16.4645L11.6464 19.6464ZM27 19.5L12 19.5L12 20.5L27 20.5L27 19.5Z"
+                  fill="#000593"
+                />
+              </svg>
+            </div>
+            <div id="swiper-button-next" class="swiper-button-next">
+              <svg
+                class="next__svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="19.5" stroke="#000593" />
+                <path
+                  class="next__svg-path"
+                  d="M11.6464 19.6464C11.4512 19.8417 11.4512 20.1583 11.6464 20.3536L14.8284 23.5355C15.0237 23.7308 15.3403 23.7308 15.5355 23.5355C15.7308 23.3403 15.7308 23.0237 15.5355 22.8284L12.7071 20L15.5355 17.1716C15.7308 16.9763 15.7308 16.6597 15.5355 16.4645C15.3403 16.2692 15.0237 16.2692 14.8284 16.4645L11.6464 19.6464ZM27 19.5L12 19.5L12 20.5L27 20.5L27 19.5Z"
+                  fill="#000593"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+            </div>
+          </div>
+          <div id="swiper-scrollbar" class="swiper-scrollbar">
+            <div
+              id="swiper-scrollbar-drag"
+              class="swiper-scrollbar-drag"
+              style="
+                transform: translate3d(0px, 0px, 0px);
+                transition-duration: 0ms;
+                width: 400px;
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container faq__container">
+          <div class="faq__chapter chapter">FAQ</div>
+          <h2 class="faq__title title">Вопросы и ответы на них</h2>
+          <div class="faq__content">
+            <div class="faq__left">
+              <div class="accordion__fifth">
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      Сколько стоят бухгалтерские услуги и что входит в цену?
+                    </button>
+                    <svg
+                      class="ac-svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                        fill="#666666"
+                      />
+                    </svg>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">
+                      Мы предлагаем пакетные тарифы на бухгалтерское
+                      сопровождение. Услуги, оказываемые в рамках тарифа, будут
+                      зафиксированы в договоре на бухгалтерское сопровождение.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      Нужно ли мне оплачивать что-то дополнительно?
+                    </button>
+                    <svg
+                      class="ac-svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                        fill="#666666"
+                      />
+                    </svg>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">
+                      Мы предлагаем пакетные тарифы на бухгалтерское
+                      сопровождение. Услуги, оказываемые в рамках тарифа, будут
+                      зафиксированы в договоре на бухгалтерское сопровождение.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      Нужен ли Вам доступ к моему банковскому счету?
+                    </button>
+                    <svg
+                      class="ac-svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                        fill="#666666"
+                      />
+                    </svg>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">
+                      Мы предлагаем пакетные тарифы на бухгалтерское
+                      сопровождение. Услуги, оказываемые в рамках тарифа, будут
+                      зафиксированы в договоре на бухгалтерское сопровождение.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a class="faq__link link" href="#">Перейти в раздел</a>
+            </div>
+            <div class="faq__rigth-imgbox">
+              <img
+                class="faq__rigth-img"
+                src="./img/main/faq/faq__bgpic.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <div class="footer__top-content">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title footer__title">Навигация</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./index.html#about__us"
+                      >О компании</a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./index.html#work"
+                      >Как мы работаем</a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./index.html#reviews"
+                      >Отзывы клиенов</a
+                    >
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./index.html#faq"
+                      >Часто задаваемые вопросы</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__rates">
+                <h3 class="footer__rates-title footer__title">Тарифы</h3>
+                <ul class="footer__rates-list">
+                  <li class="footer__rates-item">
+                    <a class="footer__rates-link" href="#">Название тарифа 1</a>
+                  </li>
+                  <li class="footer__rates-item">
+                    <a class="footer__rates-link" href="#">Название тарифа 2</a>
+                  </li>
+                  <li class="footer__rates-item">
+                    <a class="footer__rates-link" href="#">Название тарифа 3</a>
+                  </li>
+                  <li class="footer__rates-item">
+                    <a class="footer__rates-link" href="#">Название тарифа 4</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__services">
+                <h3 class="footer__services-title footer__title">Услуги</h3>
+                <ul class="footer__services-list">
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 1</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 2</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 3</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__faq">
+                <h3 class="footer__faq-title footer__title">FAQ</h3>
+                <ul class="footer__services-list">
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 1</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 2</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 3</a
+                    >
+                  </li>
+                  <li class="footer__services-item">
+                    <a class="footer__services-link" href="#"
+                      >Название услуги 4</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__contact">
+                <a class="footer__contact-link" href="#">Перейти в раздел</a>
+                <a class="footer__contact-phone" href="tel:8800200600"
+                  >8 800 200 600</a
+                >
+                <p class="footer__contact-description">
+                  Звонок по России бесплатный
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-rights">
+              <p>Политика конфиденциальности</p>
+              <p>Сайт создан и разработан в CrazyStudio</p>
+            </div>
+            <div class="footer__bottom-socials">
+              <div class="footer__social">
+                <a class="footer__social-link" href="#"
+                  ><svg
+                    class="footer__social-svg"
+                    width="10"
+                    height="9"
+                    viewBox="0 0 10 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="footer__social-svg"
+                      d="M8.99771 0.470007L0.346602 3.90546C0.0655197 3.99916 0.0967512 4.40517 0.377834 4.49886L2.56403 5.18595L3.43851 7.93432C3.50098 8.15294 3.78206 8.2154 3.93822 8.05924L5.2187 6.87245L7.65475 8.65264C7.84214 8.77756 8.092 8.68387 8.15446 8.46525L9.84095 1.21956C9.93465 0.688627 9.46618 0.282619 8.99771 0.470007V0.470007ZM3.93822 5.71688L3.65713 7.34092L3.0325 5.09226L9.12263 1.09464L3.93822 5.71688Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__social-link" href="#"
+                  ><svg
+                    class="footer__social-svg"
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_706_524)">
+                      <path
+                        class="footer__social-svg"
+                        d="M8.74753 4.91786C8.75794 3.6634 7.68957 2.51348 6.36614 2.35428C6.33754 2.35072 6.30905 2.34638 6.28068 2.34127C6.21416 2.32853 6.1467 2.32128 6.07898 2.31958C5.80744 2.31958 5.735 2.51044 5.71592 2.62365C5.69726 2.73426 5.71505 2.82752 5.7684 2.89996C5.85819 3.02185 6.01652 3.04354 6.14361 3.06089C6.18048 3.0661 6.21562 3.07087 6.24511 3.07738C7.43451 3.34328 7.83488 3.761 8.03051 4.94042C8.03528 4.96905 8.03745 5.00461 8.04005 5.04235C8.04873 5.18333 8.06608 5.47656 8.38143 5.47656C8.40746 5.47656 8.43608 5.47439 8.46558 5.47005C8.75881 5.42537 8.7497 5.1573 8.74536 5.02847C8.74406 4.99204 8.74276 4.95777 8.74623 4.93478C8.74692 4.92902 8.74721 4.92322 8.7471 4.91743L8.74753 4.91786Z"
+                        fill="#000593"
+                      />
+                      <path
+                        class="footer__social-svg"
+                        d="M6.00173 1.89397C6.0373 1.89658 6.07027 1.89918 6.09803 1.90308C8.05129 2.20368 8.94963 3.12892 9.19818 5.09736C9.20252 5.13076 9.20338 5.17154 9.20382 5.21448C9.20642 5.36847 9.21163 5.68859 9.55517 5.6951H9.56558C9.67359 5.6951 9.75904 5.66256 9.82064 5.59837C9.92735 5.48689 9.92041 5.32075 9.9139 5.18715C9.9126 5.15419 9.9113 5.12339 9.9113 5.09606C9.93645 3.08337 8.19357 1.25763 6.18261 1.18997C6.17394 1.18997 6.16613 1.18997 6.15832 1.19127C6.15041 1.19226 6.14244 1.1927 6.13446 1.19257C6.11408 1.19257 6.08979 1.19083 6.06333 1.1891C6.03209 1.18693 5.99609 1.18433 5.95922 1.18433C5.6391 1.18433 5.57837 1.41206 5.57056 1.54783C5.55278 1.86144 5.85598 1.88356 6.00173 1.89397ZM9.10405 7.64142C9.06214 7.60956 9.02064 7.57717 8.97956 7.54426C8.76614 7.37248 8.53928 7.21459 8.32023 7.06147L8.18359 6.96604C7.90251 6.76868 7.65005 6.67281 7.41148 6.67281C7.08962 6.67281 6.80941 6.85066 6.57778 7.20071C6.47541 7.356 6.35091 7.43148 6.19779 7.43148C6.09144 7.42776 5.98708 7.4016 5.89155 7.3547C4.98497 6.94349 4.33692 6.31279 3.96648 5.48038C3.78734 5.07784 3.84546 4.81498 4.16038 4.6007C4.33952 4.47924 4.67223 4.25325 4.64924 3.81991C4.62234 3.32845 3.53748 1.84886 3.08029 1.68099C2.88484 1.6097 2.6706 1.60908 2.47475 1.67926C1.94945 1.8558 1.57294 2.16638 1.38425 2.57629C1.20207 2.97276 1.21074 3.43819 1.40767 3.92228C1.97808 5.32206 2.77969 6.54268 3.79081 7.5499C4.78023 8.53586 5.99652 9.3431 7.40541 9.94994C7.5325 10.0046 7.66567 10.0345 7.76327 10.0562C7.79624 10.0636 7.82486 10.0701 7.84569 10.0757C7.85714 10.0788 7.86895 10.0804 7.88082 10.0805H7.8921C8.5549 10.0805 9.35087 9.47497 9.59508 8.78484C9.80936 8.18016 9.4181 7.8813 9.10405 7.64142ZM6.29496 3.49328C6.18174 3.49588 5.94534 3.50196 5.86249 3.74227C5.82345 3.85505 5.82822 3.95221 5.87637 4.03246C5.94664 4.14958 6.08154 4.18601 6.20387 4.20597C6.64848 4.2771 6.87708 4.52262 6.92262 4.97938C6.94388 5.19192 7.08746 5.34071 7.27094 5.34071C7.28486 5.34069 7.29877 5.33982 7.31258 5.3381C7.5338 5.31208 7.64095 5.14942 7.6314 4.85489C7.63487 4.54778 7.47438 4.19903 7.20067 3.92141C6.92653 3.64293 6.59599 3.48591 6.29496 3.49328Z"
+                        fill="#fff"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_706_524">
+                        <rect
+                          width="10.4105"
+                          height="10.4105"
+                          fill="white"
+                          transform="translate(0.380493 0.533936)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="footer__social-link" href="#"
+                  ><svg
+                    class="footer__social-svg"
+                    width="11"
+                    height="11"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="footer__social-svg"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.46567 1.78516C7.08141 1.40027 6.62425 1.0951 6.12068 0.887321C5.6171 0.679544 5.07712 0.573293 4.532 0.574721C2.2469 0.574721 0.385165 2.42631 0.385165 4.70108C0.383434 5.4254 0.574274 6.13728 0.938308 6.76443L0.350464 8.90308L2.54916 8.32826C3.15712 8.65795 3.83829 8.83098 4.53062 8.83158H4.53235C6.8178 8.83158 8.67745 6.98033 8.67884 4.70384C8.67884 3.60152 8.24785 2.56518 7.46567 1.78482V1.78516ZM4.532 8.13412H4.53062C3.91347 8.13412 3.30765 7.96912 2.77645 7.65637L2.65048 7.5821L1.34501 7.92236L1.69341 6.6563L1.61221 6.52676C1.26679 5.97997 1.08392 5.347 1.08475 4.70108C1.08475 2.81079 2.6314 1.27252 4.53339 1.27252C4.98604 1.2714 5.43443 1.35966 5.85258 1.53222C6.27073 1.70477 6.65034 1.95818 6.96944 2.27777C7.29011 2.59583 7.5443 2.97399 7.71733 3.3904C7.89036 3.80681 7.97879 4.25322 7.97752 4.70384C7.97752 6.59585 6.43087 8.13412 4.53166 8.13412H4.532ZM6.4215 5.56469C6.31844 5.51357 5.80867 5.26415 5.71394 5.2303C5.6192 5.19506 5.5498 5.17883 5.48074 5.28143C5.41134 5.38506 5.21354 5.61755 5.15281 5.68629C5.09313 5.75365 5.03205 5.76332 4.92899 5.71185C4.82488 5.66073 4.4914 5.55122 4.09546 5.19921C3.78765 4.92631 3.5791 4.58777 3.51941 4.48517C3.45834 4.38154 3.51247 4.32627 3.56418 4.27445C3.61137 4.22885 3.66828 4.15458 3.71999 4.09378C3.77135 4.03471 3.78939 3.99153 3.82409 3.92244C3.8581 3.8537 3.84075 3.7929 3.81472 3.74177C3.78904 3.69065 3.58187 3.1818 3.49512 2.97523C3.4108 2.77418 3.32543 2.8025 3.26193 2.7987C3.20224 2.79594 3.13318 2.79594 3.06413 2.79594C2.99472 2.79594 2.88229 2.8215 2.78721 2.92548C2.69247 3.02808 2.42527 3.27784 2.42527 3.78495C2.42527 4.29241 2.79658 4.78329 2.84863 4.85238C2.89999 4.91974 3.5791 5.96126 4.61841 6.40827C4.81099 6.49118 5.00792 6.56372 5.20834 6.62556C5.45645 6.70363 5.68271 6.69292 5.86177 6.66701C6.06096 6.63765 6.47425 6.4176 6.561 6.17613C6.64672 5.93605 6.64672 5.72947 6.62069 5.68629C6.59501 5.64311 6.52596 5.6172 6.4215 5.56469Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div id="popup1" class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__close close-popup"></div>
+            <div class="popup__box">
+              <div class="popup__feedback">
+                <h3 class="feedback__title">Не нашли нужный вопрос?</h3>
+                <p class="feedback__text">
+                  Оставьте контакты и мы ответим на все ваши вопросы
+                </p>
+                <form id="form_id" class="feedback__hero-form">
+                  <div class="feedback__name-form">
+                    <p>Ваше имя*</p>
+                    <input
+                      class="feedback__name-input"
+                      type="username"
+                      data-name="name"
+                      required
+                      pattern="[A-Za-zА-Яа-яЁё]+"
+                    />
+                  </div>
+                  <div class="feedback__phone-form">
+                    <p>Номер телефона</p>
+                    <input
+                      placeholder="8 ХХХ ХХХ ХХ ХХ"
+                      class="feedback__phone-input"
+                      type="tel"
+                      data-name="phone1"
+                      required
+                      pattern="[0-9\s]+"
+                    />
+                  </div>
+                  <button type="submit" class="feedback__form-button link">
+                    Получить консультацию
+                  </button>
+                </form>
+              </div>
+              <img
+                class="popup__fedback-img"
+                src="./img/popup/popup__feedback.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-		<div id="popup" class="popup">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#header" class="popup__close close-popup">
-						<svg
-							class="popup__cross"
-							width="25"
-							height="25"
-							viewBox="0 0 25 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								opacity="0.1"
-								cx="12.5"
-								cy="12.4998"
-								r="12.5"
-								fill="#000593"
-							/>
-							<g clip-path="url(#clip0_158_2746)">
-								<path
-									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
-									stroke="#000593"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0_158_2746">
-									<rect
-										width="11"
-										height="11"
-										fill="white"
-										transform="translate(7 6.99976)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
-					</a>
-					<div class="popup__box">
-						<div class="popup__feedback">
-							<h3 class="feedback__title">Не нашли нужный вопрос?</h3>
-							<p class="feedback__text">
-								Оставьте контакты и мы ответим на все ваши вопросы
-							</p>
-							<form class="feedback__hero-form">
-								<div class="feedback__name-form">
-									<p>Ваше имя*</p>
-									<input class="feedback__name-input" type="text" />
-								</div>
-								<div class="feedback__phone-form">
-									<p>Номер телефона</p>
-									<input
-										placeholder="8 ХХХ ХХХ ХХ ХХ"
-										class="feedback__phone-input"
-										type="text"
-									/>
-								</div>
-								<button>
-									<a
-										href="#popup_3"
-										class="feedback__form-button link popup__button popup-link"
-									>
-										Получить консультацию
-									</a>
-								</button>
-							</form>
-						</div>
-						<img
-							class="popup__fedback-img"
-							src="./img/popup/popup__feedback.jpg"
-							alt=""
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="popup_2" class="popup">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#header" class="popup__close close-popup">
-						<svg
-							class="popup__cross"
-							width="25"
-							height="25"
-							viewBox="0 0 25 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								opacity="0.1"
-								cx="12.5"
-								cy="12.4998"
-								r="12.5"
-								fill="#000593"
-							/>
-							<g clip-path="url(#clip0_158_2746)">
-								<path
-									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
-									stroke="#000593"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0_158_2746">
-									<rect
-										width="11"
-										height="11"
-										fill="white"
-										transform="translate(7 6.99976)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
-					</a>
-					<div class="popup__box">
-						<div class="popup__review">
-							<p class="popup__review-name">Игорь Рыбаков</p>
-							<p class="popup__review-date">Отзыв оставлен 11.02.2022</p>
-							<div class="popup__review-text">
-								<p class="popup__text">
-									Очень высокое качество фильмов, виден каждый волос на лице
-									героев. Ты как будто сам в фильме - эффект присутствия.
-									Рекомендую сходить сюда хоть раз, чтобы круто провести время
-									и почувствовать атмосферу
-								</p>
-								<p class="popup__text">
-									Очень высокое качество фильмов, виден каждый волос на лице
-									героев. Ты как будто сам в фильме - эффект присутствия.
-									Рекомендую сходить сюда хоть раз, чтобы круто провести время
-									и почувствовать атмосферу
-								</p>
-								<p class="popup__text">
-									Очень высокое качество фильмов, виден каждый волос на лице
-									героев. Ты как будто сам в фильме - эффект присутствия.
-									Рекомендую сходить сюда хоть раз, чтобы круто провести время
-									и почувствовать атмосферу
-								</p>
-								<p class="popup__text">
-									Очень высокое качество фильмов, виден каждый волос на лице
-									героев. Ты как будто сам в фильме - эффект присутствия.
-									Рекомендую сходить сюда хоть раз, чтобы круто провести время
-									и почувствовать атмосферу
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="popup_3" class="popup">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#header" class="popup__close close-popup">
-						<svg
-							class="popup__cross"
-							width="25"
-							height="25"
-							viewBox="0 0 25 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								opacity="0.1"
-								cx="12.5"
-								cy="12.4998"
-								r="12.5"
-								fill="#000593"
-							/>
-							<g clip-path="url(#clip0_158_2746)">
-								<path
-									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
-									stroke="#000593"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0_158_2746">
-									<rect
-										width="11"
-										height="11"
-										fill="white"
-										transform="translate(7 6.99976)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
-					</a>
-					<div class="popup__box">
-						<div class="popup__thank">
-							<img
-								class="popup__thank-img"
-								src="./img/popup/popup__thank.png"
-								alt=""
-							/>
-							<p class="popup__thank-chapter chapter">Спасибо за заявку</p>
-							<p class="popup__thank-title title">
-								Наш менеджер свяжется с вами в течении 1 минуты и
-								проконсультирует по любому вопросу
-							</p>
-							<a class="popup__thank-link link" href="./index.html"
-								>Вернуться на главную</a
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    <script src="./js/script.js"></script>
-    <script src="./js/accordion.js"></script>
-    <script src="./js/popup.js"></script>
-    <script>
-      new Accordion(".accordion__fifth");
-      new swiper(".swiper__two");
-    </script>
-		</div>
+      <div id="popup2" class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__close close-popup"></div>
+            <div class="popup__box">
+              <div class="popup__thank">
+                <img
+                  class="popup__thank-img"
+                  src="./img/popup/popup__thank.png"
+                  alt=""
+                />
+                <p class="popup__thank-chapter chapter">Спасибо за заявку</p>
+                <p class="popup__thank-title title">
+                  Наш менеджер свяжется с вами в течении 1 минуты и
+                  проконсультирует по любому вопросу
+                </p>
+                <a
+                  class="popup__thank-link link popup__close"
+                  href="./index.html"
+                  >Вернуться на главную</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/script.js"></script>
+      <script src="./js/accordion.js"></script>
+      <script src="./js/popup.js"></script>
+      <script src="./js/reviews.js"></script>
+      <script>
+        new Accordion(".accordion__fifth");
+      </script>
+    </div>
   </body>
 </html>

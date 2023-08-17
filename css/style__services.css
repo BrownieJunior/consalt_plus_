@@ -1,7 +1,7 @@
 /*============================== Services__Hero =========================*/
 
 .services__hero {
-  background: url("../img/services/services__herobg.jpg") no-repeat;
+  background: url("../img/services/services__herobg.jpg") center no-repeat;
   background-size: cover;
 }
 

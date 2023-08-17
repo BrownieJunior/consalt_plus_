@@ -1,7 +1,7 @@
 /*============================== FAQ__Hero =========================*/
 
 .faq__hero {
-  background: url("../img/faq/hero__faqbg.jpg") no-repeat;
+  background: url("../img/faq/hero__faqbg.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -25,8 +25,7 @@
 }
 
 .faq__hero-title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: 500;
   font-size: 56px;
   line-height: 120%;
@@ -52,6 +51,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.finance__left {
+  margin-right: 20px;
 }
 .finance__title {
   font-weight: 500;
@@ -134,7 +136,7 @@
 .feedback__form-button {
   font-size: 14px;
   width: 100%;
-  padding: 18px 76px 18px 76px;
+  padding: 18px 0;
   line-height: 150%;
   text-align: center;
   color: #000593;
